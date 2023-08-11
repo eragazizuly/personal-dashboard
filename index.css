@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    background: no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -moz-background-size: cover;
+    color: #ffffff;
+    text-shadow: 1px 1px 20px #aaaaaa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    padding: 15px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#time {
+    align-self: center;
+    font-size: 5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#crypto {
+    font-size: 1.3rem;
+}
+
+#weather {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: end;
+    margin-top: -15px;
+}
+
+#weather img {
+    width: 70px;
+}
+
+.city {
+    width: 100%;
+    text-align: end;
+    font-size: 1.2rem;
+    margin-top: -20px;
+}
+
+.temp {
+    font-size: 1.7rem;
+}
