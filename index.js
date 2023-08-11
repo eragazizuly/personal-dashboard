@@ -13,7 +13,7 @@ fetch("https://api.unsplash.com/photos/random?orientation=landscape&query=nature
 
 // let options = {
 //     method: 'GET',
-//     headers: { 'x-api-key': 'B5MR2ADY6Vn96vYCnGhS6A==ba3mx9FTHEauuglu' }
+//     headers: { 'x-api-key': '{YOUR_API_KEY}' }
 //   }
   
 // let url = 'https://api.api-ninjas.com/v1/quotes?category=happiness'
@@ -31,7 +31,7 @@ fetch("https://api.unsplash.com/photos/random?orientation=landscape&query=nature
 //         console.log(`error ${err}`)
 //     }); 
 
-fetch("https://api.currencyfreaks.com/v2.0/rates/latest?apikey=2ad9576c303b4513b8dea96116f11b37")
+fetch("https://api.currencyfreaks.com/v2.0/rates/latest?apikey={YOUR_API_KEY}")
     .then(response => {
         if(!response.ok) {
             throw Error("Something went wrong!")
@@ -58,7 +58,7 @@ setInterval(currentTime, 1000)
 navigator.geolocation.getCurrentPosition(pos => {
     const crd = pos.coords
     console.log(pos)
-    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${crd.latitude}&lon=${crd.longitude}&appid=778b837e420fe6d36b61aed5dfc585ee&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${crd.latitude}&lon=${crd.longitude}&appid={YOUR_API_KEY}&units=metric`)
         .then(response => {
             if(!response.ok) {
                 throw Error("Weather data not available.")
